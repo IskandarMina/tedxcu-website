@@ -18,48 +18,58 @@
            
            
            .bgg {
-               height: 4px;
-               background-color: red;
+               height: 5px;
+               background-color: #e62b1e;
            }
            
            .logo {
                resize: both;
-               width: 265px;
+               width: 260px;
                height: 100px;
-               display: inline-grid;  
            }
            
            nav {
-               background-color: transparent;
-               background: transparent;
                
+                background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9) ), url('thumb_COLOURBOX12089573.png');
+
+               opacity: 0.8;
            }
            
            nav ul {
                 margin-right: 10px;
-                
            }
            
            nav .nav-item {
-               margin: 10px;             
+               margin: 10px;
+           }
+           
+           a:hover {
+               color: #e62b1e !important;
+               text-decoration: none !important;
+               
            }
            
            nav .navList {
-               color: black;
+               color: white;
                text-decoration: none;
+               
            }
            
            .content {
-               min-height: calc(100vh - 150px);
+               
            }
            
            footer{
                position: absolute;
                bottom: 0;
                width: 100%;
-               background-color: black;
+               background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.99) ), url('thumb_COLOURBOX12089573.png');
                text-align: center;
-               padding: 50px;               
+               padding: 50px;
+           }
+           
+           footer p {
+               color: white;
            }
            
            i {
@@ -73,19 +83,22 @@
             <div class="bgg"></div>
             
             <nav class="navbar transparent ">
-                <img class="logo" src="webLogo.png"/>
+                <img class="logo" src="smalllogowhite.png"/>
 
                 <ul class="nav ml-auto">
-                    <li class="nav-item"><a class="navList" href="http://www.tedxcairouniversity.com/blog/" target="_blank">Blog</a></li>
-                    <li class="nav-item"><a class="navList" href="team.html">Team</a></li>
-                    <li class="nav-item"><a class="navList" href="#">About</a></li>
-                    <li class="nav-item"><a class="navList" href="#">Contact</a></li>
+                    <li class="nav-item blog"><a class="navList" href="http://www.tedxcairouniversity.com/blog/" target="_blank">Blog</a></li>
+                    
+                    <li class="nav-item team"><a class="navList" href="team.html">Team</a></li>
+                    
+                    <li class="nav-item about"><a class="navList" href="#">About</a></li>
+                    
+                    <li class="nav-item contact"><a class="navList" href="#">Contact</a></li>
                 </ul>
             </nav>
         </header>
         
         <content class="content container">
-            Hello
+            Some content.
         </content>
         
         <footer>
@@ -97,6 +110,7 @@
             
             <a href="https://www.youtube.com/channel/UC5MHTl7K6PXWAKa_gagD1Xw" target="_blank" title="Youtube"><i class="fa fa-youtube fa-3x" id="icon" aria-hidden="true"></i></a>
             
+            <br />
             <br />
             <p>TEDxCairoUniversity &copy; 2018. All rights reserved.</p>
         </footer>
