@@ -22,26 +22,21 @@
             }
             
             
-            .events-banners {
+            .blog-post {
                margin: 5px;
            }
            
            .event-navigation {
-               text-align: center;
-               margin: 100px;
-               display: flex;
-               flex-direction: row;
-               justify-content: space-between;
-               
+               text-align: right;
+               margin: 50px;
            }
-            
            
            .buttons {
                background-color: transparent;
+               border-width: 5px;
                border-color: transparent;
                resize: both;
-               width: 175px;
-                 
+               width: 200px;
            }
            
            img {
@@ -50,9 +45,7 @@
                 width: auto\9; /* ie8 */
            }
             
-            .salon-events {
-                height: 100px;
-            }
+            
         </style>
     </head>
     
@@ -64,9 +57,9 @@
                 <img class="logo" src="./imgs/webLogo.png"/>
 
                 <ul class="nav ml-auto">
-                    <li class="nav-item events"><a class="navList" href="events.html" >Events</a></li>
+                    <li class="nav-item events"><a class="navList" href="events.html" target="_blank">Events</a></li>
                     
-                    <li class="nav-item blog"><a class="navList" href="blog.html"s target="_blank">Blog</a></li>
+                    <li class="nav-item blog"><a class="navList" href="blog.html">Blog</a></li>
                     
                     <li class="nav-item team"><a class="navList" href="team.html" target="_blank">Team</a></li>
                     
@@ -78,36 +71,22 @@
         </header>
         
         <content class="content container">
-            <div class="event-navigation container">
-                <div class="mainButton">
-                    <button class="buttons" id="main"><img src="imgs/events/main.png"/></button>
-                    <br/>
-                    <div id="mainarr"><img class="arr" id="mainarr" src="imgs/events/downarrow.png"/></div>
-                </div>
-                
-                <div class="salonButton">
-                    <button class="buttons" id="salon"><img src="imgs/events/salon.png"/></button>
-                    <br/>
-                    <div id="salonarr"><img class="arr"  src="imgs/events/downarrow.png"/></div>
-                </div>
+            <div class="event-navigation">
+                <button class="buttons" id="main"><img src="imgs/blog-pages/subscribe-button.png"/></button>
             </div>
             
             <div class="main-events" id="main-events">
-                <div class="events-banners">
-                    <a href="https://www.tedxcairouniversity.com/agora.html" target="_blank" title="Go to Agora's page"><img class="event" src="imgs/events/agora.png"/></a>
+                <div class="blog-post">
+                    <a href="http://www.tedxcairouniversity.com/blog/agoras-notepad/" target="_blank" title="Agoura"><img class="event" src="imgs/blog-pages/AGOURA.png"/></a>
                 </div>
 
-                <div class="events-banners">
-                    <a href="https://www.tedxcairouniversity.com/decipher.html" target="_blank" title="Go to Decipher's page"><img class="event" src="imgs/events/decipher.png"/></a>
+                <div class="blog-post">
+                    <a href="http://www.tedxcairouniversity.com/blog/a-messenger/" target="_blank" title="A messenger"><img class="event" src="imgs/blog-pages/a-messenger.png"/></a>
                 </div>
 
-                <div class="events-banners">
-                    <a href="https://www.tedxcairouniversity.com/mosac.html" target="_blank" title="Go to Mosaic's page"><img class="event" src="imgs/events/mosaic.png"/></a>
+                <div class="blog-post">
+                    <a href="http://www.tedxcairouniversity.com/blog/your-ultimate-guide-to-a-tedx-event/" target="_blank" title="Your ultimate guide to TEDx events"><img class="event" src="imgs/blog-pages/ultimate-guide.png"/></a>
                 </div>
-            </div>
-            
-            <div class="salon-events container" id="salon-events">
-                <h2>Coming Soon .....</h2>
             </div>
         </content>
         
@@ -143,27 +122,6 @@
             function color() {
                 document.getElementById(icon).style.color = "red";
             }
-        </script>
-        
-        <script>
-            $(document).ready(function(){
-                $("#salon-events").hide();
-                $("#salonarr").hide();
-                
-                $("#main").click(function(){
-                    $("#main-events").show();
-                    $("#salon-events").hide();
-                    $("#salonarr").hide();
-                    $("#mainarr").show();
-                });
-                
-                $("#salon").click(function(){
-                    $("#main-events").hide();
-                    $("#salon-events").show();
-                    $("#salonarr").show();
-                    $("#mainarr").hide();
-                });
-            });
         </script>
     </body> 
 </html>

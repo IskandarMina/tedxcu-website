@@ -2,7 +2,7 @@ html{
    height: 100%;
 }
 body {
-   background-image: url(background.jpg);
+   background-image: url("./../imgs/background.jpg");
    background-repeat: repeat;
    height: 100%;
 }
@@ -21,7 +21,7 @@ body {
 
 nav {
 
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9) ), url('thumb_COLOURBOX12089573.png');
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9) ), url('./../imgs/pattern.png');
 
    opacity: 0.8;
 }
@@ -49,13 +49,14 @@ nav .navList {
 }
 
 .content {
-
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 footer{
    bottom: 0;
    width: 100%;
-   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.99) ), url('thumb_COLOURBOX12089573.png');
+   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.99) ), url('./../imgs/pattern.png');
    text-align: center;
    padding: 50px;
 }
