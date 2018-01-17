@@ -14,7 +14,7 @@ body {
 }
 
 .logo {
-  margin-left: 10%;
+  background-image: url("./../imgs/background.jpg");
   margin-top: 4%;
   resize: both;
   width: 260px;
